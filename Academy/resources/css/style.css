@@ -1,0 +1,810 @@
+
+body {
+  font-size: 16px; 
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.main-content {
+  max-width: 75rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  top: 5rem;
+}
+
+.content-text { 
+  display: flex;
+  font-family: 'Lato', sans-serif;
+}
+.content{ 
+  display: flex;
+  font-family: 'Lato', sans-serif;
+}
+.content-img{ 
+  display: flex;
+  font-family: 'Lato', sans-serif;
+}
+.content-video{ 
+  display: flex;
+  font-family: 'Lato', sans-serif;
+}
+.divide-block { 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.content-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.head { 
+  display: flex;
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+.head h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+ 
+}
+
+.column {
+  flex-direction: column;
+}
+
+/* Header*/
+header {
+  display: flex;
+  flex-direction: column;
+  max-width: 75rem;
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+  z-index: 2;
+  justify-content: center;
+  background-color: white;
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 1.5rem;
+}
+
+.main-menu .logo {
+  display: flex;
+  align-items: center;
+}
+
+.main-menu .logo img {
+  width: 2.5rem;
+  height: auto;
+}
+
+.main-menu .logo h1 {
+  display: flex;
+  
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.main-menu .logo h1 span {
+  color: #E8E826;
+}
+
+.main-menu .menu {
+  display: flex;
+  align-items: center;
+}
+
+.main-menu .menu ul {
+  display: flex;
+}
+
+.main-menu .menu ul li {
+  margin: 0 0.5rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.main-menu .menu ul li:hover {
+  background-color: #E8E826;
+}
+
+.main-menu .menu ul li:active {
+  background-color: #E8E826;
+}
+
+.main-menu .menu ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.mobile-menu { /* mobile-menu */
+  height: 4rem;
+  display: none;
+  align-items: center;
+}
+
+.mobile-menu-align {
+  width: auto;
+  margin: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Media query Header */
+@media only screen and (max-width: 805px) {
+  .main-menu .logo img {
+    width: 2rem;
+  }
+
+  .main-menu .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .main-menu .menu ul li {
+    margin: 0 0.3rem;
+    padding: 0.3rem 0.5rem;
+  }
+
+  .main-menu .menu ul li a {
+    font-size: 0.9rem;
+  }
+
+}
+
+@media only screen and (max-width: 625px) {
+  .main-menu .logo h1 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .main-menu .logo h1 {
+    display: none;
+  }
+
+  .main-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+    align-items: center;
+    margin-top: 1rem;
+  }
+}
+
+/*Learn Something*/
+#something {
+  width: inherit;
+  background-color: #dddd17;
+}
+
+#something .content {
+  flex-direction: row;
+}
+
+#something .content .content-img {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+#something .content .content-img img {
+  border-radius: 5px;
+}
+
+#something .content .content-text {
+  align-items: center;
+}
+
+#something .content .content-text ul li:first-child {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.8rem;
+}
+
+#something .content .content-text ul li:nth-child(even) {
+  font-size: 1.5rem;
+  margin-bottom: 1.8rem;
+
+}
+
+#something .content .content-text ul li a {
+  display: flex;
+  justify-content: center;
+  padding: 0.75rem 0rem;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  border-radius: 5px;
+ 
+}
+
+#something .content .content-text ul li a:hover {
+  background-color: #dddd17;
+}
+
+#something .content .content-text ul li a:active {
+  background-color: #dddd17;
+}
+
+/* Media Query Learn Something*/
+@media only screen and (max-width: 1030px) {
+  #something .content .content-text ul li:first-child {
+      font-size: 2rem;
+  }
+
+  #something .content .content-text ul li:nth-child(even) {
+    font-size: 1.1rem;
+  }
+
+  #something .content .content-text ul li a {
+
+    padding: 0.6rem 0rem;
+    background-color: black;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 805px) {
+  #something .content {
+    flex-direction: column;
+  }
+
+  #something .content .content-img {
+    width: 92%;
+    /margin: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  #something .content .content-text {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  #something .content .content-text ul li:first-child {
+      font-size: 3rem;
+  }
+
+  #something .content .content-text ul li:nth-child(even) {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #something .content .content-text ul li a {
+    padding: 0.75rem 0rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  #something .content .content-text ul {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  #something .content .content-text ul li:first-child {
+      font-size: 2.5rem;
+  }
+
+  #something .content .content-text ul li:nth-child(even) {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  #something .content .content-text ul li:last-child {
+    width: 70%;
+    margin-left: 2.7rem;
+  }
+
+  #something .content .content-text ul li a {
+    padding: 0.75rem 0rem;
+    font-size: 1.3rem;
+  }
+}
+
+
+/*Keep Practicing*/
+#practicing {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+#practicing .left {
+  width: 60%;
+}
+
+#practicing .left .content .content-img {
+  margin: 2rem 1.5rem;
+
+}
+
+#practicing .left .content .content-text {
+  margin: 0 1.5rem;
+}
+
+#practicing .left .content .content-text ul li:first-child {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+#practicing .left .content .content-text ul li:nth-child(even) {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+ 
+}
+
+#practicing .left .content .content-text ul li:last-child {
+  font-weight: bold;
+}
+
+#practicing .right {
+  width: 40%;
+  margin-top: 1.5rem;
+  flex-direction: row;
+}
+
+#practicing .right .content {
+  margin-bottom: 1.5rem;
+}
+
+#practicing .right .content:hover {
+  color: #E8E826;
+}
+
+#practicing .right .content.silver {
+  border-radius: 5px;
+}
+
+#practicing .right .content .content-img {
+  margin: 0.5rem;
+  width: 35%;
+}
+
+#practicing .right .content .content-img img {
+  border-radius: 5px;
+}
+
+#practicing .right .content .content-text {
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+#practicing .right .content .content-text ul li:first-child {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+#practicing .right .content .content-text ul li:nth-child(even) {
+  line-height: 1.4;
+  margin-bottom: 0.4rem;
+}
+
+#practicing .right .content .content-text ul li a {
+  color: #E8E826;
+  text-decoration: none;
+}
+
+/* Media Query for Keep Praticing*/
+@media only screen and (max-width: 1030px) {
+  #practicing .left .content .content-text ul li:first-child {
+    font-size: 2rem;
+  }
+
+  #practicing .left .content .content-text ul li:nth-child(even) {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+
+  #practicing .right .content .content-text {
+    margin-left: 1rem;
+  }
+
+  #practicing .right .content .content-text ul li:first-child {
+    font-size: 1.15rem;
+  }
+
+  #practicing .right .content .content-text ul li:nth-child(even) {
+    line-height: 1.3;
+    font-size: 0.9rem;
+  }
+
+}
+
+@media only screen and (max-width: 760px) {
+  #practicing .left .content .content-text ul li:first-child {
+    font-size: 1.6rem;
+  }
+
+  #practicing .left .content .content-text ul li:nth-child(even) {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  #practicing .right .content .content-text {
+    margin-left: 0.75rem;
+  }
+
+  #practicing .right .content .content-text ul li:first-child {
+    font-size: 1rem;
+  }
+
+  #practicing .right .content .content-text ul li:nth-child(even) {
+    line-height: 1.1;
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #practicing .left {
+    display: none;
+  }
+
+  #practicing {
+    display: flex;
+    justify-content: center;
+  }
+
+  #practicing .right {
+    width: 100%;
+  }
+
+  #practicing .right .content  {
+    width: 100%;
+  }
+
+  #practicing .right .content .content-img {
+    width: 50%;
+  }
+
+  #practicing .right .content .content-text ul li:first-child {
+    font-size: 1.3rem;
+  }
+
+  #practicing .right .content .content-text ul li:nth-child(even) {
+    line-height: 1.4;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #practicing .right .content {
+    flex-direction: column;
+  }
+
+  .visible {
+    display: none;
+  }
+
+  .hiden {
+    display: block;
+  }
+
+  #practicing .right .content .content-img.hiden {
+    width: 100%;
+    margin-left: 0.4rem;
+  }
+
+  #practicing .right .content .content-img.hiden img {
+    width: 95%;
+    height: auto;
+  }
+
+  #practicing .right .content .content-text {
+    margin-bottom: 0.5rem;
+  }
+}
+/*Start Learning */
+#start {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dddd17;
+}
+
+#start .learning-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 4.5rem 2rem 4.5rem;
+  justify-content: space-between;
+}
+
+#start .learning-imgs .content {
+  width: 31%;
+  background-color: white;
+  border-radius: 5px;
+
+}
+
+#start .learning-imgs .content:hover {
+  color: #E8E826;
+}
+
+
+#start .learning-imgs .content .content-img img {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+#start .learning-imgs .content .content-text {
+  margin: 1.5rem 0 1.5rem 1.5rem;
+}
+
+#start .learning-imgs .content .content-text ul li:first-child {
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+
+#start .learning-imgs .content .content-text ul li:nth-child(even) {
+  padding: 0.5rem 0;
+  font-size: 1.4rem;
+}
+
+#start .learning-imgs .content .content-text ul li:last-child {
+  padding: 0.5rem 0;
+  line-height: 1.4;
+  font-size: 1.1rem;
+}
+.margin {  
+  margin: 0 2rem;
+}
+
+.margin-top { 
+  margin-top: 1.5rem;
+}
+
+
+/* Media query for start learning */
+@media only screen and (max-width: 1150px) {
+  #start .learning-imgs {
+    max-width: 700px;
+    width: 100%;
+  }
+
+  #start .learning-imgs .content {
+    width: 45%;
+    margin: 0.75rem 0;
+  }
+
+  .margin {
+    margin:0;
+  }
+
+  .margin-top { 
+    margin-top:0;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  #start {
+    margin: 0 1rem;
+    border: 2px solid white;
+  }
+
+  #start .learning-imgs {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+  }
+
+  #start .learning-imgs .content {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #start .learning-imgs {
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  #start .learning-imgs .content {
+    margin: 0.5rem 1rem;
+    border: 1px solid white;
+    color: white;
+  }
+
+  #start .learning-imgs .content .content-img img {
+    display: none;
+  }
+
+  #start .learning-imgs .content .content-text ul li:nth-child(even) {
+    display: none;
+  }
+
+  #start .learning-imgs .content .content-text ul li:last-child {
+    display: none;
+  }
+
+  #start .learning-imgs .content .content-text {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0.5rem 1.5rem 0.5rem;
+  }
+
+  #start .learning-imgs .content:hover {
+    color: #E8E826;
+  }
+}
+
+/* Thesis  */
+#thesis {
+  display: flex;
+  flex-direction: column;
+}
+
+#thesis .staffing {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+#thesis .staffing .left {
+  width: 60%;
+}
+
+#thesis .staffing .left .content-video {
+  margin: 0 1.5rem 1.5rem 1.5rem;
+}
+
+#thesis .staffing .left .content-video video {
+  width: 100%;
+  height: 100%;
+}
+
+#thesis .staffing .left .content .content-text {
+  margin: 0 1.5rem;
+}
+
+#thesis .staffing .left .content .content-text ul li:first-child {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+#thesis .staffing .left .content .content-text ul li:last-child {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+ 
+}
+
+#thesis .staffing .right {
+  width: 40%;
+}
+
+#thesis .staffing .right .content.silver {
+  margin-bottom: 1rem;
+}
+
+#thesis .staffing .right .content {
+  border-radius: 5px;
+}
+
+#thesis .staffing .right .content:hover {
+  color: #E8E826;
+}
+
+#thesis .staffing .right .content .content-img {
+  width: 35%;
+  height: auto;
+  margin: 0.5rem;
+}
+
+#thesis .staffing .right .content .content-text {
+  align-items: center;
+  width: 65%;
+  margin: 0 0.5rem;
+}
+
+#thesis .staffing .right .content .content-text ul li:first-child {
+  font-size: 1.7rem;
+  padding: 0.5rem 0;
+  font-weight: bold;
+}
+
+#thesis .staffing .right .content .content-text ul li:last-child {
+  padding: 0.5rem 0;
+  line-height: 1.4;
+  font-size: 1.1rem;
+}
+
+/* Media query for Block 5 */
+@media only screen and (max-width: 1050px) {
+  #thesis .staffing .left {
+    width: 50%;
+  }
+
+  #thesis .staffing .right {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #thesis .staffing .right {
+    display: none;
+  }
+
+  #thesis .staffing .left {
+    width: 100%;
+  }
+
+  #thesis .staffing .left .content .content-text ul li:first-child {
+    display: none;
+  }
+
+  #thesis .staffing .left .content .content-text ul li:last-child {
+    display: none;
+  }
+}
+
+/* Footer */
+footer {
+  height: 5rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #dddd17;
+}
+
+footer span {
+  margin: 0.5rem 0 0 1.5rem;
+  font-size: 1.1rem;
+  padding-top: 1rem;
+}
+
+footer ul {
+  display: flex;
+  margin: 0.5rem 1.5rem 0 0;
+}
+
+footer ul li {
+  margin: 0.5rem 1rem;
+}
+
+footer ul li a {
+  color: black;
+  padding-bottom: 0;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+/* Media query for footer */
+
+@media only screen and (max-width: 1150px) {
+  footer ul {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+}
+.hiden { 
+  display: none;
+}
+
+.visible { 
+  display:block;
+}
